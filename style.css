@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 /*HEADER*/
 
 header{
@@ -11,7 +15,6 @@ header{
     background-color: #fffefa;
     border-bottom: 3px solid #39807b;
     top: 0%;
-
 }
 
 #logo{
@@ -63,7 +66,6 @@ header> nav> div> a{
     display: none;
     position: absolute;
     background-color: #fffefa;
-    min-width: 160px;
     z-index: 1;
 }
 
@@ -99,7 +101,7 @@ header> nav> div> a{
     width: 460px;
     background-color: #fffefa; opacity: 90%;
     padding-left: 60px;
-    padding-top: 6px;
+    padding-top: 50px;
     box-sizing: border-box;
     position: relative; top: 140px; left: 120px;  
 }
@@ -110,9 +112,13 @@ body{
     background-color: #fffefa;
 }
 
+main{
+    background-image: url("images/baggrund-tapet.png");
+    background-size: cover;
+}
+
 #frame{
         border: 2px solid #39807b;
-        padding: 10px; 
         margin-left: 120px;     
 }
 
@@ -124,7 +130,7 @@ body{
 
 #centertext{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 /*ARTIKLER & BLOGINDLÆG SECTION*/
@@ -150,7 +156,7 @@ body{
     text-align: left;
     line-height:0.2em;
     padding-left: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-top: -10px;
 }
 
@@ -175,12 +181,32 @@ body{
     padding-right: 100px;
 }
 
+.buy-button{
+    background-color:#dc793e;
+    width: 100px;
+    color: #1c1c1b;
+    font-family: Myriad Pro, sans-serif;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    margin: 4px 4px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buy-button:hover{
+    background-color: #c36c29;
+}
+
 /*HEADINGS AND PARAGRAPHS*/
 
 h1{
     font-family: Myriad Pro;
     font-size: 40pt;
-    margin-bottom: -20px;
+ 
 }
 
 h2{
@@ -202,13 +228,16 @@ H4{
     font-family: Myriad Pro;
     font-size: 12pt;
     font-style: italic;
-    font-weight:400;
+    font-weight:640;
+    padding-bottom: 1em;
 }
 
 h5{
     font-family: Myriad Pro, sans-serif;
-    font-size: 12pt;
     font-style: italic;
+    font-size: 12pt;
+    padding-top: 1em;
+    padding-bottom: 2.4em;
 }
 h6{
     font-family: Myriad Pro, sans-serif;
@@ -216,6 +245,7 @@ h6{
     color: #dc793e;
     font-style: italic;
     line-height: 1.6;
+    padding-top: 1.2em;
 }
 
 p{
@@ -223,10 +253,39 @@ p{
     font-size: 12pt;
     letter-spacing: 0.2pt;
     line-height: 1.8em;
+    padding-top: 1em;
 }
 
 /*FOOTER*/
 
 footer{
     background-color: #7d888c;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: -140px;
 }
+
+#place-center{
+    margin-left: -200px;
+}
+
+footer> div> a> img{
+    width: 10%;
+    float: left;
+    padding-top: 16px;
+    padding-right: 10px;
+}
+
+footer > div > p > a{
+    text-decoration: none;
+    color: #1c1c1b;
+}
+
+footer > div > p > a:hover{
+    font-weight: 600;
+}
+
+
