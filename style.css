@@ -84,6 +84,36 @@ header> nav> div> a{
     display: block;
 }
 
+/*BURGERMENU*/
+
+#burgermenubody{
+    background-color: #fffefa;
+    color: #1c1c1b;
+}
+
+#burgermenu{
+    display:flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+
+#burgermenu> div> a{
+    text-decoration: none;
+    color: #1c1c1b;
+    font-family: 'Myriad Pro', sans-serif;
+    padding: 20px;
+    font-size: 13pt;
+    letter-spacing: 0.5pt;
+}
+
+#burgermenuexit > img{
+    width: 30px;
+    height: 30px;
+    padding: 2%;
+}
+
 /*HERO SECTION*/
 
 #hero{
