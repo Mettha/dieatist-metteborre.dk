@@ -18,9 +18,7 @@ header{
 }
 
 #logo{
-    height: 32px;
-    margin-right: 20px;
-    margin-bottom: 8px;
+    height: 40px;
 }
 
 #søgeikon{
@@ -34,11 +32,10 @@ header{
 .button{
     background-color:#dc793e;
     color: #1c1c1b;
-    font-family: Myriad Pro, sans-serif;
+    font-family: 'Myriad Pro', sans-serif;
     text-decoration: none;
     border: none;
     border-radius: 8px;
-    margin: 4px 4px;
     padding: 8px 14px;
     display: inline-flex;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -51,7 +48,7 @@ header{
 header> nav> div> a{
     text-decoration: none;
     color: #1c1c1b;
-    font-family: Myriad Pro, sans-serif;
+    font-family: 'Myriad Pro', sans-serif;
     padding: 20px;
     font-size: 13pt;
     letter-spacing: 0.5pt;
@@ -71,7 +68,7 @@ header> nav> div> a{
 
 .dropdown-content a{
     color: #1c1c1b;
-    font-family: Myriad Pro;
+    font-family: 'Myriad Pro';
     font-size: 11pt;
     letter-spacing: 0.5pt;
     padding: 12px 16px;
@@ -157,7 +154,6 @@ main{
     line-height:0.2em;
     padding-left: 20px;
     padding-bottom: 20px;
-    padding-top: -10px;
 }
 
 /*MINE BØGER SECTION*/
@@ -185,7 +181,7 @@ main{
     background-color:#dc793e;
     width: 100px;
     color: #1c1c1b;
-    font-family: Myriad Pro, sans-serif;
+    font-family: 'Myriad Pro', sans-serif;
     text-decoration: none;
     border: none;
     border-radius: 8px;
@@ -204,13 +200,14 @@ main{
 /*HEADINGS AND PARAGRAPHS*/
 
 h1{
-    font-family: Myriad Pro;
+    font-family: 'Myriad Pro';
     font-size: 40pt;
- 
+    font-weight: 560;
+    letter-spacing: 0.4pt;
 }
 
 h2{
-    font-family: Myriad Pro;
+    font-family: 'Myriad Pro';
     font-size: 18pt;
     font-weight: 400;
     letter-spacing: 0.4pt;
@@ -219,13 +216,13 @@ h2{
 }
 
 h3{
-    font-family: Myriad Pro; 
+    font-family: 'Myriad Pro'; 
     font-size: 18pt;
     font-weight:400;
 }
 
 H4{
-    font-family: Myriad Pro;
+    font-family: 'Myriad Pro';
     font-size: 12pt;
     font-style: italic;
     font-weight:640;
@@ -233,14 +230,14 @@ H4{
 }
 
 h5{
-    font-family: Myriad Pro, sans-serif;
+    font-family: 'Myriad Pro', sans-serif;
     font-style: italic;
     font-size: 12pt;
     padding-top: 1em;
     padding-bottom: 2.4em;
 }
 h6{
-    font-family: Myriad Pro, sans-serif;
+    font-family: 'Myriad Pro', sans-serif;
     font-size: 12pt;
     color: #dc793e;
     font-style: italic;
@@ -249,7 +246,7 @@ h6{
 }
 
 p{
-    font-family: Myriad Pro, sans-serif;
+    font-family: 'Myriad Pro', sans-serif;
     font-size: 12pt;
     letter-spacing: 0.2pt;
     line-height: 1.8em;
@@ -260,7 +257,7 @@ p{
 
 footer{
     background-color: #7d888c;
-    margin-top: 100px;
+    margin-top: 180px;
     display: flex;
     justify-content: space-evenly;
     padding-top: 60px;
@@ -289,3 +286,60 @@ footer > div > p > a:hover{
 }
 
 
+/*MEDIA QUERY IPAD and Over*/
+                                               
+@media only screen and (min-width:1026px){
+
+#mobilemenubutton{
+    display: none;
+}
+}
+
+/*MEDIA QUERY IPAD and Under*/
+
+@media only screen and (max-width:1026px){
+
+#desktopmenu{
+    display: none;
+}
+
+nav> a> #søgeikon{
+    display: none;
+}
+
+#mobilemenubutton {
+    width: 30px;
+    height: 30px;
+    padding-right: 100px;
+    display: inline-flex;
+}
+
+#logo{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+footer> div> h3{
+    display: none;
+}
+footer> div> p{
+    display: none;
+}
+}
+
+/*MEDIA QUERY MOBIL and Under*/
+
+@media only screen and (max-width:768px){
+
+.button{
+    display: none;
+}
+
+#shoppingbagicon{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+
+}
+}
