@@ -11,7 +11,7 @@ header{
     width: 100%;
     height: 80px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background-color: #fffefa;
     border-bottom: 3px solid #39807b;
     top: 0%;
@@ -133,6 +133,26 @@ header> nav> div> a{
     position: relative; top: 140px; left: 120px;  
 }
 
+.fade-in-pop-up{
+    width: 30%;
+    position: absolute;
+    left: 500px;
+    top: 900px;
+    z-index: 1;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+  
+@keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    0% {transform:scale(0.5);}
+    50% {transform:scale(1.2);}
+    100% {transform:scale(1);}
+}
+  
+
 /*Hvem er jeg SECTION*/
 
 body{
@@ -145,8 +165,8 @@ main{
 }
 
 #frame{
-        border: 2px solid #39807b;
-        margin-left: 120px;     
+    border: 2px solid #39807b;
+    margin-left: 120px;     
 }
 
 
@@ -225,6 +245,73 @@ main{
 
 .buy-button:hover{
     background-color: #c36c29;
+}
+
+/*BØGER*/
+
+.bøger{
+    display: flex;
+    padding: 200px;
+}
+
+.bøger> div> h3{
+    color: #dc793e;
+    padding-bottom: 0.5em;
+}
+
+#italic{
+    color: #1c1c1b;
+    font-style: italic;
+    padding-top: 3em;
+}
+
+.green-box-bøger{
+    height: 400px;
+    width: 70%;
+    background-color: #39807b;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+}
+
+.green-box-bøger> div> img{
+    width: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/*NYHEDSBREV*/
+
+.pictogram{
+    width: 30%;
+}
+
+.nyhed{
+    display: flex;
+    padding-left: 200px;
+    padding-top: 200px;
+}
+
+.nyhed> div> h3{
+    color: #dc793e;
+    padding-bottom: 0.5em;
+}
+
+.fordele{
+    display: flex;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.fordele> h3{
+    color: #39807b;
+    padding-bottom: 1em;
 }
 
 /*HEADINGS AND PARAGRAPHS*/
@@ -323,6 +410,10 @@ footer > div > p > a:hover{
 #mobilemenubutton{
     display: none;
 }
+
+#kontaktikoner{
+    display: none;
+}
 }
 
 /*MEDIA QUERY IPAD and Under*/
@@ -356,6 +447,53 @@ footer> div> h3{
 footer> div> p{
     display: none;
 }
+
+#kontakt{
+    display: none;
+}
+
+footer> div> a> img{
+    width: 6%;
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+#kontaktikoner{
+  margin-left: 520px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.flex> div> img{
+    width: 80%;
+    align-items: center;
+}
+
+#frame{
+    margin-left: 0px; 
+    margin-top: 60px;
+}
+
+.green-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards{
+
+    align-items: center;
+}
+
+.thumbnail{
+    width: 26%;
+}
 }
 
 /*MEDIA QUERY MOBIL and Under*/
@@ -370,6 +508,34 @@ footer> div> p{
     width: 40px;
     height: 40px;
     display: inline-flex;
+}
 
+.cards{
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnail{
+    width: 50%;
+    margin-top: 40px;
+}
+
+.opacity-box{
+    position: relative; top: 140px; left: 20px;  
+}
+
+footer> div> a> img{
+    width: 10%;
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+#kontaktikoner{
+  margin-left: 460px;
 }
 }
+
+
