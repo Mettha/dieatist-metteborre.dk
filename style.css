@@ -310,7 +310,6 @@ main{
     width: 10%;
     margin-right: 100px;
     padding-top: 10px;
-    
 }
 
 .fordele> div> div> h4{
@@ -503,12 +502,14 @@ footer> div> a> img{
 
 .flex{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
     align-items: center;
-    width: 80%;
+    padding-top: 10%;
+  
 }
+
 .flex> div> img{
-    width: 80%;
+    width: 90%;
     align-items: center;
 }
 
@@ -518,12 +519,10 @@ footer> div> a> img{
 }
 
 .green-box{
-    flex-direction: column;
-    align-items: center;
+    width: 90%;
 }
 
 .cards{
-
     align-items: center;
 }
 
@@ -531,9 +530,35 @@ footer> div> a> img{
     width: 26%;
 }
 
+.bøger{
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.green-box-bøger{
+    width: 90%;  
+}
+
+.nyhed{
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#green{
+    padding-left: 10%;  
+}
+
 .green-box-nyhed{
     height: 400px;
     width: 90%;
+}
+
+h2{
+    padding-left: 42%;
+    padding-bottom: 40px;
+    padding-top: 60px;
 }
 }
 
@@ -554,26 +579,88 @@ footer> div> a> img{
 .cards{
     flex-direction: column;
     align-items: center;
-   
 }
 
 .thumbnail{
     width: 90%;
     margin-top: 40px;
-    
 }
 
 .opacity-box{
     position: relative; top: 140px; left: 20px;  
 }
 
+.flex{
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.flex> div> img{
+    width: 90%;
+    align-items: center;
+}
+
+.green-box{
+    flex-direction: column;
+    align-items: center;
+    height: 750px;
+    width: 96%;
+}
+
+.green-box> div> img{
+    width: 60%;
+    padding-left: 20%;
+    padding-bottom: 4%;
+}
+
+.bøger{
+    padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.green-box-bøger{
+    flex-direction: column;
+    align-items: center;
+    height: 680px;
+    width: 90%;
+    padding-left: 10%;
+}
+
+.green-box-bøger> div> img{
+    padding-bottom: 8%;
+}
+
+.nyhed{
+    padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.fordele{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 20px;
+}
+
+.pictogram{
+    width: 30%; 
+}
+
 .green-box-nyhed{
     height: 500px;
-    width: 90%;
+    width: 96%;
+}
+
+h2{
+   margin-right: 100px;
 }
 
 footer> div> a> img{
-    width: 10%;
+    width: 12%;
     display: flex;
     margin-left: 10px;
     justify-content: space-around;
@@ -582,7 +669,7 @@ footer> div> a> img{
     padding-right: 4%;
 }
 #kontaktikoner{
-  margin-left: 460px;
+  margin-left: 450px;
 }
 }
 
