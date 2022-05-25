@@ -136,12 +136,11 @@ header> nav> div> a{
 .fade-in-pop-up{
     width: 30%;
     position: absolute;
-    left: 500px;
-    top: 900px;
+    left: 550px;
+    top: 260px;
     z-index: 1;
     animation-name: fadeIn;
-    animation-duration: 5s;
-    animation-delay: 2s;
+    animation-duration: 2s;
 }
   
 @keyframes fadeIn {
@@ -254,11 +253,6 @@ main{
     padding: 200px;
 }
 
-.bøger> div> h3{
-    color: #dc793e;
-    padding-bottom: 0.5em;
-}
-
 #italic{
     color: #1c1c1b;
     font-style: italic;
@@ -272,7 +266,6 @@ main{
     box-sizing: border-box;
     border-radius: 8px;
     margin: auto;
-    margin-top: 120px;
     margin-bottom: 120px;
     display: flex;
     justify-content: center;
@@ -288,30 +281,72 @@ main{
 
 /*NYHEDSBREV*/
 
-.pictogram{
-    width: 30%;
-}
-
 .nyhed{
     display: flex;
     padding-left: 200px;
     padding-top: 200px;
 }
 
-.nyhed> div> h3{
+#orange{
     color: #dc793e;
     padding-bottom: 0.5em;
 }
 
 .fordele{
     display: flex;
-    padding-left: 200px;
-    padding-top: 100px;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    margin-left: 100px;
 }
 
-.fordele> h3{
+#green{
     color: #39807b;
     padding-bottom: 1em;
+    padding-left: 200px;
+    padding-top: 3em;
+}
+
+.pictogram{
+    width: 10%;
+    margin-right: 100px;
+    padding-top: 10px;
+    
+}
+
+.fordele> div> div> h4{
+    text-align: center;
+    padding-top: 1em;
+ }
+
+.fordele> div> div> p{
+    text-align: center;
+}
+
+.green-box-nyhed{
+    height: 400px;
+    width: 70%;
+    background-color: #39807b;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 5%;
+    padding-top: 4%;
+}
+
+input, textarea{
+    width: 25%;
+    margin-left: 36%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.green-box-nyhed> div> h3{
+    color: #dc793e;
+    padding-bottom: 0.5em;
+    font-weight: bolder;
+    font-size: 24pt;
 }
 
 /*HEADINGS AND PARAGRAPHS*/
@@ -330,6 +365,7 @@ h2{
     letter-spacing: 0.4pt;
     padding-left: 120px;
     padding-bottom: 40px;
+    padding-top: 80px;
 }
 
 h3{
@@ -494,6 +530,11 @@ footer> div> a> img{
 .thumbnail{
     width: 26%;
 }
+
+.green-box-nyhed{
+    height: 400px;
+    width: 90%;
+}
 }
 
 /*MEDIA QUERY MOBIL and Under*/
@@ -513,15 +554,22 @@ footer> div> a> img{
 .cards{
     flex-direction: column;
     align-items: center;
+   
 }
 
 .thumbnail{
-    width: 50%;
+    width: 90%;
     margin-top: 40px;
+    
 }
 
 .opacity-box{
     position: relative; top: 140px; left: 20px;  
+}
+
+.green-box-nyhed{
+    height: 500px;
+    width: 90%;
 }
 
 footer> div> a> img{
