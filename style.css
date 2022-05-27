@@ -198,6 +198,15 @@ main{
     width: 100%;
 }
 
+.thumbnail> a> img{
+    width: 100%;
+}
+
+.container> a{
+    text-decoration: none;
+    color: #1c1c1b;
+}
+
 .container{
     text-align: left;
     line-height:0.2em;
@@ -244,6 +253,71 @@ main{
 
 .buy-button:hover{
     background-color: #c36c29;
+}
+
+/*FODMAP ARTIKEL*/
+
+#fodmap{
+    background-image: url("images/fodmap-1920_962.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size:84%;
+    background-position: center;
+    background-position-y: 150px;
+}
+
+.opacity-box-diæt{
+    height: 260px;
+    width: 460px;
+    background-color: #fffefa; opacity: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+    box-sizing: border-box;
+    position: relative; top: 250px; left: 460px;  
+}
+
+.artikel{
+    display: flex;
+    padding: 120px;
+}
+
+.artikel> div> h3{
+    padding-top: 2em;
+}
+
+.headline{
+    font-size: 24pt;
+}
+
+.artikel> div> h2{
+    padding-top: 1em;
+    font-style: italic;
+    padding-left: 0px;
+}
+
+.green-box-bog{
+    height: 400px;
+    width: 100%;
+    background-color: #39807b;
+    box-sizing: border-box;
+    padding-right: 20%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-box-bog> div> img{
+    width: 240px;
+    padding-right: 160px;
+    padding-left: 200px;
+    transform: rotate(-6deg);
+}
+
+.green-box-bog> div> h3{
+  padding-bottom: 1em;
 }
 
 /*BØGER*/
@@ -348,6 +422,32 @@ input, textarea{
     font-size: 24pt;
 }
 
+/*TAK FOR TILMELDING*/
+
+#smiley{
+    width: 100px;
+    padding-bottom: 50%;
+}
+
+.white-box{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.white-box> div> h1{
+    padding-bottom: 0.5em;
+}
+
+.white-box> div> h5{
+    padding-top: 4em;
+    padding-bottom: 0.5em;
+}
+
 /*HEADINGS AND PARAGRAPHS*/
 
 h1{
@@ -438,7 +538,7 @@ footer > div > p > a:hover{
 }
 
 
-/*MEDIA QUERY IPAD and Over*/
+/*MEDIA QUERY TABLET and Over*/
                                                
 @media only screen and (min-width:1026px){
 
@@ -451,7 +551,7 @@ footer > div > p > a:hover{
 }
 }
 
-/*MEDIA QUERY IPAD and Under*/
+/*MEDIA QUERY TABLET and Under*/
 
 @media only screen and (max-width:1026px){
 
@@ -518,6 +618,12 @@ footer> div> a> img{
     margin-top: 60px;
 }
 
+.fade-in-pop-up{
+    width: 35%;
+    left: 480px;
+    top: 260px;
+}
+
 .green-box{
     width: 90%;
 }
@@ -538,6 +644,28 @@ footer> div> a> img{
 
 .green-box-bøger{
     width: 90%;  
+}
+
+.opacity-box-diæt{
+    position: relative; top: 250px; left: 270px;  
+}
+
+.artikel{
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.green-box-bog{
+    height: 500px;
+    padding-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.green-box-bog> div> img{
+    padding-right: 100px;
+    padding-left: 100px;  
 }
 
 .nyhed{
@@ -601,6 +729,12 @@ h2{
     align-items: center;
 }
 
+.fade-in-pop-up{
+    width: 55%;
+    left: 150px;
+    top: 350px;
+}
+
 .green-box{
     flex-direction: column;
     align-items: center;
@@ -630,6 +764,46 @@ h2{
 
 .green-box-bøger> div> img{
     padding-bottom: 8%;
+}
+
+.opacity-box-diæt{
+    width: 60%;
+    height: 200px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    position: absolute; top: 140px; left: 100px;  
+}
+
+#fodmap{
+    background-size:90%;
+    background-position-y: 100px;
+}
+
+.artikel{
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative; top: -140px;
+}
+
+.green-box-bog{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    height: 700px;
+    margin-top: 10px;
+}
+
+.green-box-bog> div> img{
+    width: 200px;
+    padding-right: 160px;
+    padding-left: 180px;
+    transform: rotate(0deg);
+}
+
+.green-box-bog> div> h3{
+  padding-bottom: 1em;
+  padding-top: 1.5em;
 }
 
 .nyhed{
